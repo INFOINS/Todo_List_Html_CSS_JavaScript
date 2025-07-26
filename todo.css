@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+#inputValue {
+  border-radius: 0.5rem;
+  background-color: beige;
+  height: 2rem;
+}
+
+#inputValue:hover {
+  background-color: #ffa5e4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  width: 100%;
+  background: #fc466b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  color: #ffffff;
+  margin-right: 2.8rem;
+}
+
+.main_todo_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 5rem;
+  margin: 1rem;
+
+  & li {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 9.9rem;
+    height: 2rem;
+    border-top: 0.13rem solid black;
+    border-left: 0.13rem solid black;
+    border-radius: 0.5rem;
+    padding-left: 0.3rem;
+
+    border-radius: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  & li:hover {
+    background-color: #ffa0b3;
+  }
+
+  
+}
+
+form .input-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 5rem;
+  margin: 1rem;
+}
+
+button {
+  border-radius: 2rem;
+  width: 6rem;
+  padding: 0.5rem;
+}
+
+button:hover {
+  background-color: #ffa0b3;
+}
